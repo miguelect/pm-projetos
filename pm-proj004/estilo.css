@@ -10,7 +10,9 @@ li {
     padding: 60px 40px 60px 100px;
     background-image: url('pendente.png'); /* seleciona imagem. */
     background-repeat: no-repeat; /* não deixa imagem se repetir na tela. */
-    background-position: 40px center; /* posiciona a imagem. */    
+    background-position: 40px center; /* posiciona a imagem. */   
+    
+/* as imagens tratam-se de ícones, então em vez de usar o comando "img" é comum tratar ícones com o comando "background-image" que adiciona imagens de fundo. */
 }
 
 /* função que faz transição de cores quando passa o mouse. */
@@ -31,13 +33,18 @@ li.concluido:hover {
 a {
     color: #ffffff;
     text-decoration: none;
-    display: block; /* aumenta tamanho do link, dando espaço para inserir imagem. */
+    display: block; 
+/* os links possuem comportamento in-line, com o comando "display: block;" esse comportamento muda para caixa, deixando o elemento com maior dimensão. */
     background-image: url('seta.png');
     background-repeat: no-repeat;
     background-position: right center;
+/*  maneira mais simplificada de usar o comando background-image:
+background-image: #ffffff url('seta.png') no-repeat right center; */    
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2px; /* espaço entre as letras. */
     -webkit-font-smoothing: antialiased; /* suavisa expessura da letra. */
+    -moz-osx-font-smoothing: auto;
 }
+

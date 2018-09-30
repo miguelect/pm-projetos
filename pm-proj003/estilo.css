@@ -61,8 +61,15 @@ form {
 
 /* devido uso do placeholder nos campos e email e senha, não é possível alterar a cor das letras, então usa-se esse recurso que vale no google chrome. Cada navegador tem um comando específico. */
 
+::-moz-placeholder {
+     color: #ffffff;
+     font-family: 'Roboto', sans-serif; 
+     font-size: 18px;
+     font-weight: 300;
+}
+
 ::-webkit-input-placeholder  {
-    color: #fff; 
+    color: #ffffff; 
     font-family: 'Roboto', sans-serif; 
     font-size: 18px;
     font-weight: 300;

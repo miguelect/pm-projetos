@@ -1,0 +1,69 @@
+/* este código que zera alinhamento das margens de uma figura não é necessário, pois estamos usando o arquivo "normalize.css", que normaliza/zera as margens e espaçamentos nos navegadores. Ele padroniza os layouts das páginas nos diversos navegadores.
+
+* {
+    margin: 0;
+    padding: 0:
+}
+
+*/
+
+body {
+    background-color: #745cc1;    
+    text-align: center; /* esta é uma das opções para se alinhar elementos na tela. É mais usado para centralizar elementos de texto. */  
+    -webkit-font-smoothing: antialiased;   /* técnica que diminui a expessura da fonte das letras para o Chrome. */
+}
+
+img {
+    margin-top: 65px;    
+}
+
+input {        
+    display: block; /* input são elementos "in-line" tem comportamento em linha, este comandos muda para comportamento em "caixa", ou seja, um elemento em baixo do outro. */
+    width: 100%;
+    margin-bottom: 50px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+}
+
+button {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 40px;
+    height: 50px; /* altura do botão. */
+    text-transform: uppercase;
+    box-shadow: 0px 2px 3px 0px #000000; /* adiciona sombra no elemento. */
+    border: none; /* retira o excesso de borda, que vem no botão como pradrão. */
+    color: #39393a; 
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif; /* sans-serif fica como segunda opção caso a Roboto não seja encontrada. */
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none; /* retira o sublinhado do texto. */
+    text-shadow: 1px 1px 0px #000000; 
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif; 
+}
+
+form {
+    /* padding: 60px 60px 5px 60px; sentido horário da imagem. Seria como se eu fizesse:
+    padding-top: 60px;
+    padding-right: 60px;
+    padding-bottom: 5px:
+    padding-left: 60px;
+    */
+    padding: 60px 60px 5px 60px;
+}
+
+/* devido uso do placeholder nos campos e email e senha, não é possível alterar a cor das letras, então usa-se esse recurso que vale no google chrome. Cada navegador tem um comando específico. */
+
+::-webkit-input-placeholder  {
+    color: #fff; 
+    font-family: 'Roboto', sans-serif; 
+    font-size: 18px;
+    font-weight: 300;
+}

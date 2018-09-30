@@ -1,0 +1,29 @@
+body {
+    background-color: #ffffff;  
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5px;
+    font-family: Calibri;      
+    font-size: 33px;
+}    
+
+h2 {
+    text-align: center; 
+    margin-top: 5px;
+}
+
+div {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;         
+}
+
+a {    
+    text-transform: uppercase;
+    color: #e58d12;   
+    font-family: Calibri;
+    font-size: 28px;
+    font-weight: bolder;    
+}

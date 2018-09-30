@@ -1,0 +1,43 @@
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    background-color: #4a4a4a;
+    margin-bottom: 3px;
+    padding: 60px 40px 60px 100px;
+    background-image: url('pendente.png'); /* seleciona imagem. */
+    background-repeat: no-repeat; /* não deixa imagem se repetir na tela. */
+    background-position: 40px center; /* posiciona a imagem. */    
+}
+
+/* função que faz transição de cores quando passa o mouse. */
+li:hover {
+    background-color: #6e6d6e;   
+}
+
+/* marca projeto como concuido, alterando cor para verde. */
+li.concluido {
+    background-color: #27ae60;
+    background-image: url(concluido.png);    
+}
+
+li.concluido:hover {
+    background-color: #52be7f;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block; /* aumenta tamanho do link, dando espaço para inserir imagem. */
+    background-image: url('seta.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px; /* espaço entre as letras. */
+    -webkit-font-smoothing: antialiased; /* suavisa expessura da letra. */
+}

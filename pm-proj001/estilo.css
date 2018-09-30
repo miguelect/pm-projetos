@@ -1,0 +1,35 @@
+/* zera as margens e espaçamentos do navegador. */
+* {
+    margin: 0; 
+    padding: 0; 
+    
+    /* o comando 'margin' cria espaço ao redor de elementos, fora de bordas definidas.     
+       o comando 'padding'' gera espaço em torno do conteúdo de um elemento, dentro de qualquer borda definida. */  
+}
+
+body {
+    background-color: #ecf0f1; /* fundo cinza claro. */
+    padding: 12px;
+    font-family: Arial; /* define tipo da fonte dos elementos que estão no body. */
+    font-size: 18px;
+}
+
+/* altera alinhamento de h1 e h2. */
+h1, h2 {
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase; /* letra em maiúsculo. */
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+li {
+    list-style-type: none; /* retira bullet points (círculos). */
+    background-color: #9b59b6; /* cor de fundo roxa. */
+    color: #FFFFFF; /* muda cor das letras para branca. */
+    margin-bottom: 12px; /* define tamanho da margem de baixo do elemento. */
+    padding: 12px; /* define margem em volta do texto dentro de um elemento. */
+}

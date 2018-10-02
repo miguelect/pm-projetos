@@ -3,16 +3,16 @@ ul {
     padding: 0;
 }
 
+/* as imagens do projeto tratam-se de ícones, então em vez de usar a tag "<img>" 
+é comum tratar ícones com o comando "background-image" que adiciona imagens de fundo. */
 li {
     list-style-type: none;
     background-color: #4a4a4a;
     margin-bottom: 3px;
-    padding: 60px 40px 60px 100px;
+    padding: 20px;
     background-image: url('pendente.png'); /* seleciona imagem. */
     background-repeat: no-repeat; /* não deixa imagem se repetir na tela. */
-    background-position: 40px center; /* posiciona a imagem. */   
-    
-/* as imagens tratam-se de ícones, então em vez de usar o comando "img" é comum tratar ícones com o comando "background-image" que adiciona imagens de fundo. */
+    background-position: 40px center; /* posiciona a imagem. */
 }
 
 /* função que faz transição de cores quando passa o mouse. */
@@ -20,7 +20,7 @@ li:hover {
     background-color: #6e6d6e;   
 }
 
-/* marca projeto como concuido, alterando cor para verde. */
+/* marca projeto como concuído, alterando cor para verde. */
 li.concluido {
     background-color: #27ae60;
     background-image: url(concluido.png);    
@@ -30,16 +30,17 @@ li.concluido:hover {
     background-color: #52be7f;
 }
 
+/* os links possuem comportamento in-line, com o comando "display: block;" 
+esse comportamento muda para caixa, deixando o elemento com maior dimensão. */
 a {
     color: #ffffff;
     text-decoration: none;
+    margin-left: 100px;
     display: block; 
-/* os links possuem comportamento in-line, com o comando "display: block;" esse comportamento muda para caixa, deixando o elemento com maior dimensão. */
     background-image: url('seta.png');
     background-repeat: no-repeat;
-    background-position: right center;
-/*  maneira mais simplificada de usar o comando background-image:
-background-image: #ffffff url('seta.png') no-repeat right center; */    
+    background-position: right; 
+/*  background-image: #ffffff url('seta.png') no-repeat right center;  forma resumida. */   
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
     text-transform: uppercase;

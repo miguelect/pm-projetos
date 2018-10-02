@@ -1,0 +1,97 @@
+body {
+    background-color: #9b9b9b;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+table {
+    background-color: #ffffff;
+    width: 100%;
+    border-spacing: 0; /*zera os espaçamentos gerados pelo comando
+    border.bottom na table td. */
+    border-radius: 0 0 3px 3px;
+    box-shadow: 0 2px 5px 0 #666666;
+}
+
+/* não é possível aplicar "box-shadow" na parte de cima da tabela, pois tem um "caption", logo
+aplico o "box-shadow"" diretamente no "caption". */
+table caption {
+    background-color: #ffffff; 
+    text-align: left;
+    padding: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 3px 3px 0 0;
+    box-shadow: 0 -2px 3px 0 #666666; 
+/* valor negativo faz com que a borda não apareça em baixo, mas sim em cima. */
+}
+
+/* alinhar cabeçalho. */
+table thead th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* tr é um elemento inline, para adicionar bordas precisa de comando
+que muda para comportamento de caixa. Neste caso esses comandos não
+funcionam, ideal manter o tr como ele é, elemento inline. 
+
+    table tr {
+        border-bottom: 1px solid #666666;
+        display: block;
+    }
+
+a solução é aplicar esses comandos ao td em vez do tr. */
+
+table td, table th { /* uso "th" para inserir borda no cabeçalho. */
+    border-bottom:  1px solid rgba(0, 0, 0, 0.2); /* 0.2 no canal alpha para transparência. */
+    padding-top: 20px;
+    padding-bottom: 20px;    
+/* mesmo assim ficaram alguns espaçamentos, pra corrigir usamos, 
+na função table, a propriedade "border-spacing = 0;" */
+}
+
+/* os checkboxes estão muito grudados na lateral esquerda da tabela, a alteração deve
+ser feita nos primeiros td's, poderia ser feito adicionando uma classe para cada td, mas
+tem outra forma de fazer a seleção de todos os td's e alterar tudo de uma vez, usando um
+pseudo seletor. */
+
+tbody td:first-child, thead th:first-child { /* seleciona apenas a primeiras posições. */
+/*  background-color: blue;  usamos essa cor para ver os elementos selecionados. */
+    width: 80px;
+    text-align: center;
+}
+
+tbody tr:hover {
+    background-color: #eeeeee;
+}
+
+tfoot {
+    text-align: right;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+/*  opacity: 0.5; outra alternativa ao uso do rgba() */
+}
+
+/* configurações de alinhamento do rodapé. */
+tfoot td {
+    padding-right: 20px;
+}
+
+tfoot td span {
+    margin-right: 10px;
+    margin-left: 30px;
+}
+
+tfoot td img {
+    margin-left: 30px;
+}
+
+select {
+    border: none;
+    background-color: transparent;
+}

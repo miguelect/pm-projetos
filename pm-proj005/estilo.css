@@ -9,9 +9,8 @@ body {
 
 table {
     background-color: #ffffff;
-    width: 100%;
-    border-spacing: 0; /*zera os espaçamentos gerados pelo comando
-    border.bottom na table td. */
+    width: 100%; /* faz a tabela ocupar a tela toda. */
+    border-spacing: 0; /*zera os espaçamentos gerados pelo comando border.bottom na table td. */
     border-radius: 0 0 3px 3px;
     box-shadow: 0 2px 5px 0 #666666;
 }
@@ -62,7 +61,7 @@ pseudo seletor. */
 
 tbody td:first-child, thead th:first-child { /* seleciona apenas a primeiras posições. */
 /*  background-color: blue;  usamos essa cor para ver os elementos selecionados. */
-    width: 80px;
+    width: 80px; /* largura dos elementos selecionados. */
     text-align: center;
 }
 

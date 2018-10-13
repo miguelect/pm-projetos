@@ -34,7 +34,8 @@ h1 span {
     -webkit-font-smoothing: antialiased;
 }
 
-/* media query é a definição de atributos de acordo com tamanho da tele. Neste projeto será definido valor de 500px para largura mínima. */
+/* media query é a definição de atributos de acordo com tamanho da tela. 
+neste projeto será definido valor de 500px para largura mínima. */
 @media (min-width: 500px) {
     .container {
         width: 960px; /* tamanho total somando as três imagens com os paddings. (300px+20px para cada imagem). */

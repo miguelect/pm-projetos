@@ -1,4 +1,4 @@
-body {
+﻿body {
     padding: 10px;
     font-family: 'Roboto', fantasy;
 }
@@ -46,10 +46,7 @@ neste projeto será definido valor de 500px para largura mínima. */
         padding-right: 20px;
         float: left; /* realinha as imagens uma ao lado da outra. */
     }
-/*    body {
-        background-color: red;
-    }   
-*/
+/*  body { background-color: red; }  */
 }
 
 

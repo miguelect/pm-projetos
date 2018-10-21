@@ -1,0 +1,88 @@
+<!-- projeto 007 - fase 1 - Curso Playcode Makers. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Projeto 007</title>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1><span>Titum</span></h1> <!-- image replacement. -->
+            <nav>
+                <!-- tag usada para menu de navegação. -->
+                <ul>
+                    <li><a href="#conheca">Conheça</a></li>
+                    <li><a href="#depoimento">Depoimento</a></li>
+                    <li><a href="#convite">Convite</a></li>
+                    <!-- #nomeDaSeção direciona a página, por rolagem, para seção específica. -->
+
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <section id="topo">
+        <div class="container">
+            <!-- a <div> faz com que os elementos fiquem alinhados um abaixo do outro, caso contrário os elementos se comportariam em linha, um na frente do outro. -->
+            <div class="chamada">
+                <h1>Conheça Titum</h1>
+                <p>A nova moda do momento.</p>
+                <a href="#conheca" class="botao">Saiba mais</a>
+                <!-- a classe botao foi criada, porque será reutilizada em outra parte do código. -->
+            </div>
+        </div>
+    </section>
+
+    <section id="conheca">
+        <div class="container">
+            <img src="conheca.png" alt="">
+            <div class="texto">
+                <h2>Afinal, o que é o Titum?</h2>
+                <p>Titum é um novo movimento, que veio para ficar. Lançado no último evento musical de maior prestígio mundial, Titum começou a fazer parte da cultura pop.</p>
+                <a href="#convite" class="botao">Quero Titum</a>
+            </div>
+            <!-- os elementos dessa <div> ficarão alinhados ao lado da imagem <img>, devido a formatação display:flex do container no CSS. -->
+        </div>
+    </section>
+
+    <section id="depoimento">
+        <div class="container">
+            <img src="depoimento.png" alt="">
+            <p>“Titum foi sem dúvida a melhor coisa que aconteceu na minha vida. Eu não sei como consegui viver sem o Titum até hoje”<br>
+                <strong>Cláudia Santos</strong>
+            </p>
+        </div>
+    </section>
+
+    <section id="convite">
+        <div class="container">
+            <form action="">
+                <input type="email" placeholder="Receba um convite no email informado aqui">
+                <button><span>Enviar</span></button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2016 Titum - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

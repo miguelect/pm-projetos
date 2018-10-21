@@ -42,7 +42,8 @@ body {
 }
 
 .noticia p {
-    color: #535353;    
+    color: #535353; 
+    margin-bottom: 30px;   
 }
 
 .noticia .quando {

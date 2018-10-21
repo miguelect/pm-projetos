@@ -1,0 +1,282 @@
+﻿body {
+    font-family: 'Lato', cursive;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    /*  width: 960px;  define uma largura fixa para <div container>. */
+    margin: 0 auto;
+    /* centraliza a <div container> na tela. */
+    max-width: 960px;
+    /* evita rolagem da tela no layout responsivo. */
+    display: flex;
+    /* faz com que os elementos, por padrão, fiquem alinhados lado a lado. */
+    justify-content: space-between;
+    /* posiciona o logo à esquerda e o menu à direita. */
+}
+
+.botao {
+    background-color: #ff3d7f;
+    display: block;
+    /* muda comportamento dos elementos de inline(em linha) para block(bloco). */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 0 6px 0 0 #a32751;
+    font-size: 36px;
+    font-weight: 300;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+
+
+header {
+    margin-bottom: -90px;
+    /* margem negativa faz com que a imagem incorpore o <header>. */
+}
+
+header h1 {
+    margin: 0;
+    background-image: url('logotipo.png');
+    background-repeat: no-repeat;
+    width: 177px;
+    height: 76px;
+    margin-top: 15px;
+    margin-left: 40px;
+}
+
+header h1 span {
+    visibility: hidden;
+    /* image replacement. */
+}
+
+header nav ul {
+    padding-right: 60px;
+    /* desloca todo menu á direita. */
+    margin: 0;
+    /* zera margem as <ul> para igualar com <h1>. */
+    margin-top: 30px;
+}
+
+header nav li {
+    list-style-type: none;
+    display: inline-block;
+    /* define os elementos do menu em linha (lado a lado). */
+    margin-right: 80px;
+}
+
+/* seleciona o último elemento do menu. */
+header nav li:last-child {
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    padding: 10px 30px;
+    box-shadow: 0 1px #ffffff;
+}
+
+header nav li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+
+
+
+/* uso a imagem dentro da <section> e não dentro do <container>, isso porque a imagem ocupa a tela toda, já o <container> tem um tamanho definido. */
+section#topo {
+    background-image: url('fundo.png');
+    /* não foi usada tag <img> pois a imagem encobriria o header. */
+    background-size: cover;
+    /* alinha imagem mais ao centro. */
+    height: 70px;
+}
+
+section#topo .chamada {
+    color: #ffffff;
+    margin-top: 200px;
+    text-align: center;
+}
+
+section#topo .chamada h1 {
+    margin: 0;
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+section#topo .chamada p {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+section#conheca {
+    padding: 70px;
+}
+
+section#conheca .texto {
+    padding: 70px;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+
+section#conheca .texto h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+section#conheca .texto p {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+section#conheca .texto a {
+    width: 60%;
+}
+
+
+
+
+section#depoimento {
+    background-color: #ebe8fb;
+    border-top: 4px solid #511099;
+}
+
+/* sobrescreve a classe container para um comportamento específico. */
+section#depoimento .container {
+    flex-direction: column;
+    /* altera comportamento dos elementos para coluna, ou seja, elementos lado a lado. */
+    align-items: center;
+    padding: 70px;
+    padding-bottom: 50px;
+}
+
+section#depoimento img {
+    width: 151px;
+    height: 150px;
+}
+
+section#depoimento p {
+    font-size: 24px;
+    font-weight: 300;
+    width: 75%;
+    text-align: center;
+}
+
+
+
+
+section#convite {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-image: url('convite.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#convite form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 10px 20px;
+    width: 55%;
+    /* colocando valor em porcentagem para elemento se adaptar ao layout conforme aumenta ou diminui a tlea. */
+    border-radius: 3px;
+    display: flex;
+}
+
+/* sobrescreve a classe container para um comportamento específico. */
+section#convite .container {
+    flex-direction: column;
+    align-items: center;
+}
+
+section#convite input {
+    padding: 30px;
+    width: 75%;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+}
+
+section#convite button {
+    background-image: url('envelope.png');
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    width: 95px;
+    height: 43px;
+    margin-top: 20px;
+    margin-right: 0px;
+}
+
+section#convite button span {
+    visibility: hidden;
+}
+
+
+
+
+footer {
+    background-color: #2a0157;
+    color: #ffffff;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 4px;
+}
+
+/* sobrescreve a classe container para um comportamento específico. */
+footer .container {
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+
+
+
+
+
+/* css será aplicado na largura menor que 600px. */
+@media (max-width: 600px) {
+    header nav {
+        display: none;
+        /* esconde o menu de navegação. */
+    }
+
+    header h1 {
+        margin-left: 20px;
+        /* alinha logotipo mais à esquerda. */
+    }
+
+    section#topo {
+        padding: 20px;
+    }
+
+    section#conheca .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section#conheca .container .texto {
+        padding: 5px;
+    }
+
+    section#conheca .container .texto a {
+        width: 100%;
+    }
+
+    section#depoimento .container {
+        padding: 10px;
+    }
+
+    section#convite form {
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+}

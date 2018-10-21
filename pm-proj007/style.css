@@ -1,5 +1,5 @@
 ﻿body {
-    font-family: 'Lato', cursive;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -91,7 +91,7 @@ section#topo {
     /* não foi usada tag <img> pois a imagem encobriria o header. */
     background-size: cover;
     /* alinha imagem mais ao centro. */
-    height: 70px;
+    height: 700px;
 }
 
 section#topo .chamada {

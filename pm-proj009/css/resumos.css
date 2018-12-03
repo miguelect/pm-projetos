@@ -1,0 +1,89 @@
+/*------------------------------ apresentação dos produtos. */
+.resumos {
+    width: 45%;
+    background-color: #ebebeb;
+    padding: 10px;
+    border-left: 1px solid #dddcde;
+}
+
+.resumos .produtos li {
+    display: flex;
+    border-bottom: 1px solid #dadada;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.resumos .produtos li:last-child {
+    border: none;
+}
+
+.resumos .produtos .detalhes {
+    width: 80%;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.resumos .produtos li .detalhes h3 {
+    color: #777879;
+    font-size: 12px;
+    font-family: 'muliextrabold';
+    margin-bottom: 4px;
+}
+
+.resumos .produtos li .detalhes small {
+    font-size: 10px;
+    font-family: 'muliextralight_italic';
+    color: #4a4a4a;
+    margin-bottom: 4px;
+}
+
+.resumos .produtos li .detalhes span {
+    font-size: 10px;
+    font-family: 'muliextrabold';
+    color: #9c9c9c;
+}
+
+.resumos .produtos li .preco {
+    font-size: 12px;
+    font-family: 'muliextrabold';
+    color: #777879;
+}
+
+
+
+
+
+/*------------------------------ formatação dos valores totais de compra. */
+.resumos table {
+    width: 100%;
+    border-top: 1px solid #d6d4d7;
+    border-spacing: 0;
+    color: #777879;
+    font-size: 12px;
+    margin-top: 85px;
+    
+}
+
+.resumos table th {
+    text-align: left;
+}
+
+.resumos table td {
+    text-align: right;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+/* a propriedade <tfoot> é um elemento inline, não permite aplicação de bordas, altura, largura, etc...  se colocar display block os ítens ficarão desalinhados, única saída é aplicar borda nos elementos <th> e <td> que estão dentro do <tfoot>:
+
+.resumos table tfoot th,
+.resumos table tfoot td {
+      border-top: 1px solid #d6d4d7;
+}  
+
+existe uma forma resumida de fazer, onde o asterisco significa pegar todos os elementos que estão dentro do <tfoot>, no caso são <th> e <td>. */
+.resumos table tfoot * {
+    border-top: 1px solid #d6d4d7;
+    padding-top: 7px;
+}

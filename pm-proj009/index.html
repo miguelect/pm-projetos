@@ -1,0 +1,145 @@
+<!-- projeto 009 - fase 1 Curso Playcode Makers. -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="css/principal.css">
+
+    <title>Projeto 009</title>
+</head>
+
+<body>
+
+    <div class="checkout">
+
+        <header>
+            <!-- a <div> facilita o alinhamento dos elementos usando flexbox. -->
+            <div>
+                <h1>Checkout</h1>
+                <span>Shipping > <strong>Payment Method</strong> > Confirmation</span>
+            </div>
+            <a href="#"><span>Fechar</span></a> <!-- image replacement. -->
+        </header>
+
+        <main>
+
+            <div class="cartao">
+                <div class="wallet">
+                    <h2>Wallet</h2>
+                    <ul>
+                        <li><a href="#">
+                                <img src="images/visaCard.png" alt="">
+                                <small>Ending in 1234</small>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/masterCard.png" alt="">
+                                <small>Ending in 1234</small>
+                            </a>
+                        </li>
+                        <li><a href="#">
+                                <img src="images/discoverCard.png" alt="">
+                                <small>Ending in 1111</small>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="newCard">
+                    <form action="">
+                        <fieldset>
+                            <legend>New Card</legend>
+                            <input type="text" placeholder="Name on card">
+                            <input type="text" placeholder="1111-1111-1111-1112">
+                            <input type="text" class="data" placeholder="MM/YY">
+                            <input type="text" class="cvc" placeholder="CVC">
+
+
+                            <label for="addWallet">
+                                <input type="checkbox" name="addWallet">
+                                Add card to wallet
+                            </label>
+                            <button>Continue</button>
+
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+
+            <div class="resumos">
+                <ul class="produtos">
+                    <li>
+                        <img src="images/bota.png" alt="">
+                        <div class="detalhes">
+                           <h3>The Chelsea Boot</h3>
+                           <small>Black</small>
+                           <span>Quantity: 1</span>                 
+                        </div>
+                        <span class="preco">$235</span>
+                    </li>
+                    <li>
+                        <img src="images/mochila.png" alt="">
+                        <div class="detalhes">
+                           <h3>The Twill Snap Backpack</h3>
+                           <small>Reverse Denim + Brown leather</small>
+                           <span>Quantity: 1</span>                 
+                        </div>
+                        <span class="preco">$65</span>
+                    </li>
+                    <li>
+                        <img src="images/bolsa.png" alt="">
+                        <div class="detalhes">
+                           <h3>The Twill Zip Tote</h3>
+                           <small>Reverse Denim + Black leather</small>
+                           <span>Quantity: 1</span>                 
+                        </div>
+                        <span class="preco">$48</span>
+                    </li>
+                    <li>
+                        <img src="images/cachecol.png" alt="">
+                        <div class="detalhes">
+                           <h3>The Chunky Wool Scarf</h3>
+                           <small>Black</small>
+                           <span>Quantity: 1</span>                 
+                        </div>
+                        <span class="preco">$50</span>
+                    </li>
+                </ul>
+                
+                <table>
+                    <tbody>
+                        <tr>
+                           <!-- a propriedade (scope) ajuda na questão de acessibilidade, 
+                           não interferindo no código. -->
+                            <th scope="row">Subtotal</th>
+                            <td>$338</td>
+                        </tr>
+                         <tr>
+                            <th scope="row">Shipping</th>
+                            <td>Free</td>
+                        </tr>
+                         <tr>
+                            <th scope="row">Taxes</th>
+                            <td>12.12</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="row">Total</th>
+                            <td>$410.12</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

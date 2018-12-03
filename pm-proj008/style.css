@@ -1,0 +1,224 @@
+﻿body {
+    display: flex;
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+
+aside {
+    width: 200px;
+    background-color: #242536;
+}
+
+aside h1 {
+    background-image: url('logotipo.png');
+    background-repeat: no-repeat;
+    background-color: #141524;
+    margin: 0;
+    height: 60px;
+    background-position: center center;
+    /* centralizando a imagem. */
+}
+
+aside h1 span {
+    visibility: hidden;
+}
+
+aside li {
+    list-style-type: none;
+    height: 50px;
+    /* centraliza o texto com mesmo valor da altura. */
+    line-height: 50px;
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+aside li:hover {
+    background-color: #151524;
+    border-left: 3px solid #ffb946;
+    /* define toda área do <li> como clicável. */
+    cursor: pointer;
+    /* não permite que os elementos se desloquem quando passado o mouse. 
+    [li (padding left: 15px) - li:hover (border-left: 3px)] */
+    padding-left: 12px;
+}
+
+aside li i {
+    /* espaçamento entre ícone e o texto. */
+    margin-right: 5px;
+    /* define tamanho dos ícones para ficarem alinhados ao texto. */
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+aside li small {
+    color: rgba(255, 255, 255, 0.6);
+    float: right;
+    /* desloca totalmente á direita. */
+    margin-right: 15px;
+}
+
+aside li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+aside ul {
+    /* zerar espaçamentos. */
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+section#principal {
+    width: 100%;
+}
+
+section#principal header {
+    height: 60px;
+    background-color: #242536;
+    display: flex;
+    /* permite de maneira simples fazer as alterações de alinhamento, mesmo tendo apenas um elemento. */
+    align-items: center;
+    justify-content: flex-end;
+    /* alinha a imagem totalmente á direita. */
+    padding-right: 20px;
+}
+
+section#principal .modulo .abas {
+    height: 60px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+section#principal .modulo .abas ul {
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+}
+
+section#principal .modulo .abas li {
+    display: inline-block;
+    /* posiciona os elementos em linha com altura e largura preservados. */
+    line-height: 60px;
+    /* alinha os elementos ao centro. */
+    margin-right: 40px;
+}
+
+section#principal .modulo .abas li a {
+    text-decoration: none;
+    color: #0f0f0f;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+section#principal .modulo .abas li a:hover {
+    color: #ffb946;
+}
+
+section#principal .modulo .abas li:hover {
+    /*  border-bottom: 3px solid #ffb946; */
+    box-shadow: 0 -3px 0 #ffb946 inset;
+    /* técnica para deixar efeito de crescimento da da borda para baixo da <li>. */
+}
+
+section#principal .modulo .container {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
+section#principal .modulo .container .canvas {
+    background-color: #ffffff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+
+
+
+form ul {
+    margin: 0;
+    padding: 0;
+    /* zerar espaçamentos para implementar formatação. */
+    margin-bottom: 40px;
+}
+
+form li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+form h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #161616;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+form input,
+form select {
+    width: 400px;
+    height: 40px;
+    box-sizing: border-box;
+    /* a propriedade box-sizing interpreta a medida total do elemento de acordo com a borda,
+       ou seja, adiciona a borda no tamanho total do elemento. <select> tem borda padrão maior 
+       que <input>, dando impressão que a borda do <select> é menor. Nesse caso o box-sizing 
+       retira parte da borda do input reduzindo seu tamanho em relação ao <select>.*/
+    padding-left: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+}
+
+form li.ok {
+    background-image: url('ok.png');
+    background-repeat: no-repeat;
+    background-position: top 10px center;
+    /* background-position: vertical horizontal. */
+    width: 830px;
+}
+
+form small {
+    display: block;
+    width: 400px;
+    margin-top: 5px;
+}
+
+form select {
+    color: #c5c5c5;
+}
+
+form button {
+    width: 400px;
+    height: 40px;
+    background-color: #3aca60;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.confirmacoes li {
+    font-size: 14px;
+    display: flex;
+    width: 400px;
+}
+
+.confirmacoes input {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+::-webkit-input-placeholder {
+    color: #c5c5c5;
+}

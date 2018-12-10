@@ -1,8 +1,8 @@
 # Curso Playcode Makers
 
-## Projeto 001 - Fase 1
+## Projeto 001 - Fase 1 HTML e CSS
 
-O objetivo desse projeto é apresentar os conceitos básicos de HTML e CSS.
+O objetivo desse projeto é apresentar os conceitos básicos de **HTML** e **CSS**.
 
 ### HTML
 
@@ -11,3 +11,6 @@ O objetivo desse projeto é apresentar os conceitos básicos de HTML e CSS.
 ### CSS
 
 São apresentados seletores CSS, bem como algumas propriedades para estilização da página web, como alinhamento, espaçamento, estilização de fonte, bordas, cores, etc..
+
+
+
